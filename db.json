@@ -10,7 +10,7 @@
   ],
   "contacts": 
   [
-    { // well formatted contact
+    { 
       "type":"application/vnd.lime.contact+json",
       "resource":{
         "name":"Joao Com Nome",
@@ -31,7 +31,7 @@
       }
     },
     {
-      "type":"application/vnd.lime.contact+json", //missing "identity" field
+      "type":"application/vnd.lime.contact+json", 
       "resource":{
         "name":"Joao Sem Nome",
         "lastMessageDate":"2021-01-08T12:39:18.015Z",
@@ -49,7 +49,7 @@
         "uber-trace-id":"63ca159c208d0ef1%3A6945bb2dae52f674%3A63ca159c208d1ef0%3A1"
       }
     },
-    { // request failed
+    {
       "method": "get",
       "status": "failure",
       "reason": {
