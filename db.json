@@ -8,7 +8,61 @@
     { "id": 1, "body": "some comment", "postId": 1 },
     { "id": 2, "body": "some comment", "postId": 1 }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "contacts": 
+  [
+    { // well formatted contact
+      "type":"application/vnd.lime.contact+json",
+      "resource":{
+        "name":"Joao Com Nome",
+        "lastMessageDate":"2021-01-08T12:39:18.015Z",
+        "identity":"999999999999@wa.gw.msging.net",
+        "phoneNumber":"9999999999",
+        "extras":{},
+        "source":"WhatsApp"
+      },
+      "method":"get",
+      "status":"success",
+      "id":"fe0f8de9-ebee-4db9-9ab5-a9e022d02e12",
+      "from":"postmaster@crm.msging.net/#iris-hosted-3",
+      "to":"botnenhum@msging.net/portal-joaosemnome%40take.net",
+      "metadata":{
+        "#command.uri":"lime://botnenhum@msging.net/contacts/999999999999%40wa.gw.msging.net",
+        "uber-trace-id":"63caa59c208d0ef0%3A6945bb2dae523674%3A63ca159c206d0ef0%3A1"
+      }
+    },
+    {
+      "type":"application/vnd.lime.contact+json", //missing "identity" field
+      "resource":{
+        "name":"Joao Sem Nome",
+        "lastMessageDate":"2021-01-08T12:39:18.015Z",
+        "phoneNumber":"9999999999",
+        "extras":{},
+        "source":"WhatsApp"
+      },
+      "method":"get",
+      "status":"success",
+      "id":"fe0f8de9-ebee-4db9-9ab5-a9e022d02e11",
+      "from":"postmaster@crm.msging.net/#iris-hosted-3",
+      "to":"botnenhum@msging.net/portal-joaosemnome%40take.net",
+      "metadata":{
+        "#command.uri":"lime://botnenhum@msging.net/contacts/999999999999%40wa.gw.msging.net",
+        "uber-trace-id":"63ca159c208d0ef1%3A6945bb2dae52f674%3A63ca159c208d1ef0%3A1"
+      }
+    },
+    { // request failed
+      "method": "get",
+      "status": "failure",
+      "reason": {
+          "code": 67,
+          "description": "This is a error message."
+      },
+      "id": "f62e9cda-ff8c-41c9-aed1-d657baafed08",
+      "from": "postmaster@msging.net/#iris-hosted-3",
+      "to": "botnenhum@msging.net/portal-joaosemnome%40take.net",
+      "metadata": {
+        "#command.uri":"lime://botnenhum@msging.net/contacts/999999999999%40wa.gw.msging.net",
+        "uber-trace-id":"63ca159c208d0ef1%3A6945bb2dae52f674%3A63ca159c208d1ef0%3A1"
+      }
+    }
+  ]
 }
