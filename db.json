@@ -8,7 +8,7 @@
     { "id": 1, "body": "some comment", "postId": 1 },
     { "id": 2, "body": "some comment", "postId": 1 }
   ],
-  "contacts": 
+  "contacts": {
     "successful-request" : { 
       "type":"application/vnd.lime.contact+json",
       "resource":{
@@ -63,5 +63,5 @@
         "uber-trace-id":"63ca159c208d0ef1%3A6945bb2dae52f674%3A63ca159c208d1ef0%3A1"
       }
     }
-  ]
+  }
 }
